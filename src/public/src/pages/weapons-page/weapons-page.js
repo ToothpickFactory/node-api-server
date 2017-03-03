@@ -1,10 +1,10 @@
-angular.module('albion-server').directive('dashboardView', () => {
+angular.module('albion-server').directive('weaponsPage', () => {
   return {
     restrict: 'E',
     scope: {},
-    templateUrl: 'dashboard-view.html',
+    templateUrl: 'weapons-page.html',
     bindToController: true,
     controllerAs: 'vm',
     controller: [function() {}]
-  }
+	}
 });

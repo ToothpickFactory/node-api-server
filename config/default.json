@@ -1,3 +1,16 @@
 {
-	"port": 3000
+	"port": 3000,
+	"mongo": {
+		"db": "albion",
+		"collections": [
+	    "farmableitem",
+	    "stackableitem",
+	    "consumableitem",
+	    "equipmentitem",
+	    "weapon",
+	    "mount",
+	    "furnitureitem",
+	    "journalitem"
+	  ]
+	}
 }

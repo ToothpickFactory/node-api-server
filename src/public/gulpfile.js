@@ -102,7 +102,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('serve', ['watch'], function() {
-  return gulp.src('./')
+  return gulp.src('./dist')
     .pipe(webserver({
       livereload: true,
       directoryListing: false,
