@@ -1,7 +1,7 @@
 {
 	"port": 80,
 	"mongo": {
-		"db": "albionAdmin:H3lL5CR3am@localhost/albion",
+		"uri": "mongodb://albionAdmin:H3lL5CR3am@localhost/albion",
 		"collections": [
 	    "farmableitem",
 	    "stackableitem",

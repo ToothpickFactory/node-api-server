@@ -32,7 +32,7 @@
     "gulp-sourcemaps": "^2.4.0",
     "gulp-util": "^2.2.14",
     "gulp-webserver": "^0.9.1",
-    "promised-mongo": "^1.2.0",
+    "mongodb": "^2.2.24",
     "run-sequence": "^1.2.2"
   },
   "dev-dependencies": {},

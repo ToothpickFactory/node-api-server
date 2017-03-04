@@ -1,7 +1,9 @@
-const db = require("../../connections/mongo").db;
+const mongo = require("../../connections/mongo");
 
 function getWeapon(_id){
-	return db.weapon.findOne({"_id": db.ObjectId(_id)})
+	return mongo.getConnection().then(db => {
+		return db.collection("weapon").findOne({"_id": mongo.ObjectID(_id)})
+	})
 }
 
 module.exports = getWeapon;
