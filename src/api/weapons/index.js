@@ -8,13 +8,13 @@ module.exports = (app) => {
 		let query = req.query;
 		WeaponsModule.listWeapons(query)
 			.then(weapons => res.send(weapons))
-			.catch(err => res.setStatus(400).send(err));
+			.catch(err => res.status(400).send(err));
 	});
 
 	app.get('/api/weapons/:id', (req, res) => {
 		let id = req.params.id;
 		WeaponsModule.getWeapon(id)
 			.then(weapon => res.send(weapon))
-			.catch(err => res.setStatus(400).send(err));
+			.catch(err => res.status(400).send(err));
 	});
 };
