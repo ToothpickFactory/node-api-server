@@ -1,7 +1,7 @@
 {
 	"port": 80,
 	"mongo": {
-		"uri": "mongodb://albionAdmin:H3lL5CR3am@localhost/albion"
+		"uri": "mongodb://password:username@localhost/albion"
 	},
 	"www": {
 	  "baseUrl": ""

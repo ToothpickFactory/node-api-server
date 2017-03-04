@@ -16,11 +16,11 @@ const plumber					= require("gulp-plumber");
 const sourcemaps			= require('gulp-sourcemaps');
 const rev							= require('gulp-rev');
 const runSequence			= require('run-sequence');
-const NODE_ENV				= process.env.NODE_ENV || "development";
+const NODE_ENV				= process.env.NODE_ENV || "default";
 
 
 const paths = {
-	ngConfig: [`./config/${NODE_ENV}.json`],
+	ngConfig: [`../../config/${NODE_ENV}.json`],
   sassMain: ['./src/app.scss'],
   sass: ['./src/**/*.scss'],
   js: ['./src/**/*.js'],
@@ -52,8 +52,10 @@ gulp.task('vendor', function(){
 
 gulp.task('ngConfig', function() {
 	gulp.src(paths.ngConfig)
-		.pipe(gulpNgConfig('cstep.config'))
-		.pipe(rename('config.js'))
+		.pipe(gulpNgConfig('albion-server.config', {
+			environment: 'www'
+		}))
+		.pipe(rename('_config.js'))
 		.pipe(gulp.dest('./dist/js'))
 });
 
