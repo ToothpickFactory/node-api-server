@@ -1,7 +1,7 @@
 {
-	"port": 3000,
+	"port": 80,
 	"mongo": {
-		"db": "albion",
+		"db": "albionAdmin:H3lL5CR3am@localhost/albion",
 		"collections": [
 	    "farmableitem",
 	    "stackableitem",
