@@ -1,9 +1,0 @@
-{
-	"port": 80,
-	"mongo": {
-		"uri": "mongodb://albionAdmin:H3lL5CR3am@localhost/albion"
-	},
-	"www": {
-	  "baseUrl": ""
-	}
-}
